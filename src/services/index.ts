@@ -10,7 +10,6 @@ import {
   WIDTH,
   HEIGHT,
 } from './../constants';
-import {storeData, retrieveData, clearData} from './../common/AsyncStorage';
 import * as Utils from './../utils';
 export default async method => {
   return new Promise((resolve, reject) => {

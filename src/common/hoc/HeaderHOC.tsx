@@ -20,9 +20,7 @@ import {colors} from '../theme';
 import {DIMENS} from '../../constants';
 import translate from '../../i18n/i18n';
 import Loader from '../Loader';
-//Library vector
-import {IconX, ICON_TYPE} from '../Icons';
-import {LOGO} from '../images';
+import {LOGO, BACK} from '../images';
 
 const HeaderHOC =
   Comp =>
@@ -59,11 +57,14 @@ const HeaderHOC =
                   opacity: pressed ? 0.5 : 1,
                 },
               ]}>
-              <IconX
-                origin={ICON_TYPE.ICONICONS}
-                name="arrow-back"
-                color={colors.white}
-                size={32}
+              <Image
+                style={{
+                  width: DIMENS.px_25,
+                  height: DIMENS.px_28,
+                  tintColor: colors.white,
+                }}
+                source={BACK}
+                resizeMode={'contain'}
               />
             </Pressable>
             {isRightIcon && (

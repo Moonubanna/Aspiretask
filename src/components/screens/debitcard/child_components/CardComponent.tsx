@@ -1,45 +1,21 @@
 /* eslint-disable react-native/no-inline-styles */
-import React, {useState, useContext, useEffect} from 'react';
+import React from 'react';
 import {
   View,
   Image,
   Text,
-  TextInput,
   Pressable,
   ScrollView,
-  RefreshControl,
-  Dimensions,
-  StatusBar,
-  ActivityIndicator,
   StyleSheet,
-  Animated,
-  FlatList,
-  Easing,
-  ImageBackground,
-  Alert,
-  TouchableOpacity,
 } from 'react-native';
+import {FONT_FAMILIY, DIMENS} from '../../../../constants';
 import {
-  APP_PARAMS,
-  FONT_FAMILIY,
-  DIMENS,
-  emailRegex,
-  KEY,
-  passRegex,
-  SCREEN,
-  WIDTH,
-  HEIGHT,
-  BASE_URL,
-} from '../../../../constants';
-import {
-  LOGO,
   LOGO_HORI,
   VISA_LOGO,
   EYE_HIDE,
   EYE_SHOW,
 } from '../../../../common/images';
 import translate from '../../../../i18n/i18n';
-import {IconX, ICON_TYPE} from '../../../../common/Icons';
 import {colors} from '../../../../common/theme';
 
 import subChildCard from './SubChildCard';
@@ -53,16 +29,12 @@ const CardComponent = (
 ) => {
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      {/* parent view */}
       <View>
-        {/* Card iew inner */}
         <View
           style={{
             marginTop: DIMENS.px_200,
           }}>
-          {/* inner one view */}
           <View style={styles.innerView} />
-          {/* Card view */}
           <View style={styles.cardView}>
             <Pressable
               onPress={() => {
@@ -93,9 +65,7 @@ const CardComponent = (
                   : translate('SHOW_CARD_NUMBER')}
               </Text>
             </Pressable>
-            {/* Card view */}
             <View style={styles.cardMainView}>
-              {/* name, card number, expiry and cvv */}
               <View style={styles.cardInnerView}>
                 <Text style={styles.txtName}>{cardReponse?.name}</Text>
                 <View
@@ -112,7 +82,6 @@ const CardComponent = (
                     {cardReponse?.year}
                   </Text>
                 </View>
-                {/* Expiry & cvv */}
                 <View
                   style={{
                     marginTop: DIMENS.px_10,
@@ -123,19 +92,18 @@ const CardComponent = (
                     {cardReponse ? `Thru: ${cardReponse?.expired}` : ''}
                   </Text>
                   <Text
-                    style={[
-                      styles.txtExpiryCvv,
-                      {marginLeft: DIMENS.px_20},
-                    ]}>{cardReponse ? `CVV: ${isShowCard ? cardReponse?.cvv : '###'}` : ''}</Text>
+                    style={[styles.txtExpiryCvv, {marginLeft: DIMENS.px_20}]}>
+                    {cardReponse
+                      ? `CVV: ${isShowCard ? cardReponse?.cvv : '###'}`
+                      : ''}
+                  </Text>
                 </View>
               </View>
-              {/* aspire logo */}
               <Image
                 style={styles.imageAspire}
                 source={LOGO_HORI}
                 resizeMode={'contain'}
               />
-              {/* visa logo */}
               <Image
                 style={styles.imageVisa}
                 source={VISA_LOGO}
@@ -144,8 +112,6 @@ const CardComponent = (
             </View>
           </View>
         </View>
-
-        {/* bottom view */}
         {cardChildArray.map((item: object, index: number) =>
           subChildCard(item, index, pressRadio),
         )}

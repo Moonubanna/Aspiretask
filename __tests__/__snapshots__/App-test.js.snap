@@ -1,0 +1,862 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#0C365A",
+          "flex": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "background": "#43366E",
+            "flexDirection": "column",
+            "padding": 15,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "column",
+              "paddingTop": 20,
+              "width": "100%",
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "AirbnbCerealApp-Bold",
+                "fontSize": 20,
+              }
+            }
+          >
+            Debit Card
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#ffffff",
+                "fontFamily": "AirbnbCerealApp-Book",
+                "fontSize": 14,
+                "marginTop": 20,
+              }
+            }
+          >
+            Available Balance
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginTop": 10,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#01D167",
+                  "borderRadius": 5,
+                  "paddingHorizontal": 14,
+                  "paddingVertical": 3,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontFamily": "AirbnbCerealApp-Medium",
+                    "fontSize": 14,
+                  }
+                }
+              >
+                S$
+              </Text>
+            </View>
+            <Text
+              style={
+                Object {
+                  "color": "#ffffff",
+                  "fontFamily": "AirbnbCerealApp-Bold",
+                  "fontSize": 20,
+                  "marginLeft": 7,
+                }
+              }
+            >
+              5000
+            </Text>
+          </View>
+        </View>
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../src/assets/images/logo.png",
+            }
+          }
+          style={
+            Object {
+              "height": 25,
+              "position": "absolute",
+              "right": 15,
+              "top": 15,
+              "width": 25,
+            }
+          }
+        />
+      </View>
+    </View>
+    <RCTScrollView
+      showsVerticalScrollIndicator={false}
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    >
+      <View>
+        <View>
+          <View
+            style={
+              Object {
+                "marginTop": 200,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "borderTopLeftRadius": 16,
+                  "borderTopRightRadius": 16,
+                  "bottom": 0,
+                  "left": 0,
+                  "position": "absolute",
+                  "right": 0,
+                  "top": 110,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#00000000",
+                  "height": 240,
+                  "justifyContent": "flex-end",
+                  "margin": 16,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "#ffffff",
+                      "borderRadius": 5,
+                      "flexDirection": "row",
+                      "height": 60,
+                      "justifyContent": "center",
+                      "paddingTop": 8.333333333333334,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                      "width": 170,
+                    },
+                    Object {
+                      "opacity": 1,
+                    },
+                  ]
+                }
+              >
+                <Image
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../src/assets/images/green_eye_visible.png",
+                    }
+                  }
+                  style={
+                    Object {
+                      "height": 18,
+                      "width": 18,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#01D167",
+                      "fontFamily": "AirbnbCerealApp-Medium",
+                      "fontSize": 13,
+                      "marginLeft": 5,
+                    }
+                  }
+                >
+                  Show card number
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "#01D167",
+                    "borderRadius": 16,
+                    "height": 210,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "column",
+                      "height": 210,
+                      "justifyContent": "center",
+                      "paddingLeft": 20,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#ffffff",
+                        "fontFamily": "AirbnbCerealApp-Bold",
+                        "fontSize": 20,
+                      }
+                    }
+                  />
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "marginTop": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#ffffff",
+                            "fontFamily": "AirbnbCerealApp-Medium",
+                            "fontSize": 16,
+                            "marginTop": 20,
+                          },
+                          Object {
+                            "textAlignVertical": "center",
+                          },
+                        ]
+                      }
+                    >
+                      ####  ####  ####
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#ffffff",
+                            "fontFamily": "AirbnbCerealApp-Medium",
+                            "fontSize": 16,
+                            "marginTop": 20,
+                          },
+                          Object {
+                            "marginLeft": 20,
+                          },
+                        ]
+                      }
+                    />
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "center",
+                        "flexDirection": "row",
+                        "marginTop": 10,
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Object {
+                          "color": "#ffffff",
+                          "fontFamily": "AirbnbCerealApp-Medium",
+                          "fontSize": 16,
+                        }
+                      }
+                    >
+                      
+                    </Text>
+                    <Text
+                      style={
+                        Array [
+                          Object {
+                            "color": "#ffffff",
+                            "fontFamily": "AirbnbCerealApp-Medium",
+                            "fontSize": 16,
+                          },
+                          Object {
+                            "marginLeft": 20,
+                          },
+                        ]
+                      }
+                    >
+                      
+                    </Text>
+                  </View>
+                </View>
+                <Image
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../src/assets/images/aspire_hori_logo.png",
+                    }
+                  }
+                  style={
+                    Object {
+                      "position": "absolute",
+                      "right": 20,
+                      "top": 20,
+                      "width": 70,
+                    }
+                  }
+                />
+                <Image
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../src/assets/images/visa_logo.png",
+                    }
+                  }
+                  style={
+                    Object {
+                      "bottom": 20,
+                      "position": "absolute",
+                      "right": 20,
+                      "width": 70,
+                    }
+                  }
+                />
+              </View>
+            </View>
+          </View>
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#ffffff",
+                  "flexDirection": "row",
+                  "padding": 10,
+                  "width": "100%",
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flexDirection": "row",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                resizeMode="contain"
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/account.png",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 35,
+                    "width": 35,
+                  }
+                }
+              />
+              <View
+                style={
+                  Object {
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginLeft": 10,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#1A1A1A",
+                      "fontFamily": "AirbnbCerealApp-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                >
+                  Top-up account
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#bdbdbd",
+                      "fontFamily": "AirbnbCerealApp-Book",
+                      "fontSize": 11,
+                      "marginTop": 5,
+                    }
+                  }
+                >
+                  Deposit money to your account to use with card
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#ffffff",
+                  "flexDirection": "row",
+                  "padding": 10,
+                  "width": "100%",
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flexDirection": "row",
+                  "width": "80%",
+                }
+              }
+            >
+              <Image
+                resizeMode="contain"
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/weekly.png",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 35,
+                    "width": 35,
+                  }
+                }
+              />
+              <View
+                style={
+                  Object {
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginLeft": 10,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#1A1A1A",
+                      "fontFamily": "AirbnbCerealApp-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                >
+                  Weekly spending limit
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#bdbdbd",
+                      "fontFamily": "AirbnbCerealApp-Book",
+                      "fontSize": 11,
+                      "marginTop": 5,
+                    }
+                  }
+                >
+                  You haven'n set any spending limit on card
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "width": "20%",
+                }
+              }
+            >
+              <Image
+                resizeMode="contain"
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/toggle.png",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 28,
+                    "tintColor": "#bdbdbd",
+                    "width": 32,
+                  }
+                }
+              />
+            </View>
+          </View>
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#ffffff",
+                  "flexDirection": "row",
+                  "padding": 10,
+                  "width": "100%",
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flexDirection": "row",
+                  "width": "80%",
+                }
+              }
+            >
+              <Image
+                resizeMode="contain"
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/freeze.png",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 35,
+                    "width": 35,
+                  }
+                }
+              />
+              <View
+                style={
+                  Object {
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginLeft": 10,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#1A1A1A",
+                      "fontFamily": "AirbnbCerealApp-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                >
+                  Freeze card
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#bdbdbd",
+                      "fontFamily": "AirbnbCerealApp-Book",
+                      "fontSize": 11,
+                      "marginTop": 5,
+                    }
+                  }
+                >
+                  Your debit card is currently active
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "width": "20%",
+                }
+              }
+            >
+              <Image
+                resizeMode="contain"
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/toggle.png",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 28,
+                    "tintColor": "#bdbdbd",
+                    "width": 32,
+                  }
+                }
+              />
+            </View>
+          </View>
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#ffffff",
+                  "flexDirection": "row",
+                  "padding": 10,
+                  "width": "100%",
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flexDirection": "row",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                resizeMode="contain"
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/new_card.png",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 35,
+                    "width": 35,
+                  }
+                }
+              />
+              <View
+                style={
+                  Object {
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginLeft": 10,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#1A1A1A",
+                      "fontFamily": "AirbnbCerealApp-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                >
+                  Get a new card
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#bdbdbd",
+                      "fontFamily": "AirbnbCerealApp-Book",
+                      "fontSize": 11,
+                      "marginTop": 5,
+                    }
+                  }
+                >
+                  This deactivates your current debit card
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#ffffff",
+                  "flexDirection": "row",
+                  "padding": 10,
+                  "width": "100%",
+                },
+                Object {
+                  "opacity": 1,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flexDirection": "row",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                resizeMode="contain"
+                source={
+                  Object {
+                    "testUri": "../../../src/assets/images/deactivated.png",
+                  }
+                }
+                style={
+                  Object {
+                    "height": 35,
+                    "width": 35,
+                  }
+                }
+              />
+              <View
+                style={
+                  Object {
+                    "flexDirection": "column",
+                    "justifyContent": "center",
+                    "marginLeft": 10,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#1A1A1A",
+                      "fontFamily": "AirbnbCerealApp-Medium",
+                      "fontSize": 14,
+                    }
+                  }
+                >
+                  Deactivated cards
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#bdbdbd",
+                      "fontFamily": "AirbnbCerealApp-Book",
+                      "fontSize": 11,
+                      "marginTop": 5,
+                    }
+                  }
+                >
+                  Your previously deactivated cards
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;

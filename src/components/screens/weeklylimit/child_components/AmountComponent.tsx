@@ -32,7 +32,6 @@ import {
 } from '../../../../constants';
 import {LOGO, DUMMY_PAGER} from '../../../../common/images';
 import translate from '../../../../i18n/i18n';
-import {IconX, ICON_TYPE} from '../../../../common/Icons';
 import {colors} from '../../../../common/theme';
 
 const AmountComponent = (item: string, index: number, pressAmountItem: any) => {

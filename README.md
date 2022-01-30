@@ -1,4 +1,4 @@
-debit card model
+  debit card model
 A. In this, the user can see the information of his added card:
 1. how much is the balance in the card
 2. User Name, Card Number, Expiry Date, CVV Number and Card Type

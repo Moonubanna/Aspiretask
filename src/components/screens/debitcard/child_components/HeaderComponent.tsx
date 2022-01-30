@@ -1,50 +1,18 @@
-import React, {useState, useContext, useEffect} from 'react';
-import {
-  View,
-  Image,
-  Text,
-  TextInput,
-  Pressable,
-  ScrollView,
-  RefreshControl,
-  Dimensions,
-  StatusBar,
-  ActivityIndicator,
-  StyleSheet,
-  Animated,
-  FlatList,
-  Easing,
-  ImageBackground,
-  Alert,
-  TouchableOpacity,
-} from 'react-native';
-import {
-  APP_PARAMS,
-  FONT_FAMILIY,
-  DIMENS,
-  emailRegex,
-  KEY,
-  passRegex,
-  SCREEN,
-  WIDTH,
-  HEIGHT,
-  BASE_URL,
-} from '../../../../constants';
-import {LOGO, DUMMY_PAGER} from '../../../../common/images';
+import React from 'react';
+import {View, Image, Text, StyleSheet} from 'react-native';
+import {FONT_FAMILIY, DIMENS} from '../../../../constants';
+import {LOGO} from '../../../../common/images';
 import translate from '../../../../i18n/i18n';
-import {IconX, ICON_TYPE} from '../../../../common/Icons';
 import {colors} from '../../../../common/theme';
 
 const HeaderComponent = (availableBalance: string) => {
   return (
     <View style={styles.container}>
-      {/* Debit card balance component */}
       <View style={styles.subChild}>
         <Text style={styles.txtDebitCard}>{translate('DEBIT_CARD')}</Text>
         <Text style={styles.txtAvailableBalance}>
           {translate('AVAILABLE_BALANCE')}
         </Text>
-        {/* balance */}
         <View style={styles.balanceConatainer}>
           <View style={styles.balanceSubView}>
             <Text style={styles.txtBalanceGreen}>{'S$'}</Text>

@@ -60,11 +60,11 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.safeContainer}>
+      <StatusBar
+        barStyle={'light-content'}
+        backgroundColor={colors.color_primary}
+      />
       <Provider store={store}>
-        <StatusBar
-          barStyle={'light-content'}
-          backgroundColor={colors.color_primary}
-        />
         <NavigationContainer>
           <RootStack.Navigator
             //headerShown={false}

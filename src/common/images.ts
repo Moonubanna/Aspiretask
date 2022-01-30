@@ -9,6 +9,8 @@ export const DEACTIVATED = require('../../src/assets/images/deactivated.png');
 export const FREEZE = require('../../src/assets/images/freeze.png');
 export const NEW_CARD = require('../../src/assets/images/new_card.png');
 export const WEEKLY = require('../../src/assets/images/weekly.png');
+export const TOGGLE = require('../../src/assets/images/toggle.png');
+export const BACK = require('../../src/assets/images/back.png');
 
 export default {
   LOGO,
@@ -22,4 +24,6 @@ export default {
   FREEZE,
   NEW_CARD,
   WEEKLY,
+  TOGGLE,
+  BACK,
 };

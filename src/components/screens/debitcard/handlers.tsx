@@ -1,17 +1,5 @@
-import {Alert, Platform} from 'react-native';
-import {
-  APP_PARAMS,
-  FONT_FAMILIY,
-  DIMENS,
-  emailRegex,
-  KEY,
-  passRegex,
-  SCREEN,
-  WIDTH,
-  HEIGHT,
-  BASE_URL,
-} from '../../../constants';
-import * as Utils from '../../../utils';
+import {Alert} from 'react-native';
+import {KEY} from '../../../constants';
 
 // Calling api's
 export function callGetDebitCardApi(

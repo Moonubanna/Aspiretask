@@ -1,15 +1,6 @@
 import React, {Component} from 'react';
 import {ActivityIndicator, StyleSheet, Text, View, Modal} from 'react-native';
 import {colors} from './theme';
-import {
-  CirclesLoader,
-  PulseLoader,
-  TextLoader,
-  DotsLoader,
-  ColorDotsLoader,
-  NineCubesLoader,
-  BubblesLoader,
-} from 'react-native-indicator';
 
 export default class Loader extends Component {
   render() {
@@ -21,7 +12,7 @@ export default class Loader extends Component {
         style={{borderWidth: 3, borderColor: 'red'}}
         transparent={true}>
         <View style={styles.container}>
-          <BubblesLoader size={38} dotRadius={10} color={colors.white} />
+          <ActivityIndicator size={'large'} color={colors.white} />
         </View>
       </Modal>
     );

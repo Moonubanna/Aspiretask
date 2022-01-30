@@ -8,15 +8,6 @@ import {
   Image,
 } from 'react-native';
 import {colors} from './theme';
-import {
-  CirclesLoader,
-  PulseLoader,
-  TextLoader,
-  DotsLoader,
-  ColorDotsLoader,
-  NineCubesLoader,
-  BubblesLoader,
-} from 'react-native-indicator';
 import {DIMENS, FONT_FAMILIY, WIDTH} from '../constants';
 import translate from '../i18n/i18n';
 import {LOGO} from './images';

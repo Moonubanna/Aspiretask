@@ -1,38 +1,8 @@
-import React, {useState, useContext, useEffect} from 'react';
-import {
-  View,
-  Image,
-  Text,
-  TextInput,
-  Pressable,
-  ScrollView,
-  RefreshControl,
-  Dimensions,
-  StatusBar,
-  ActivityIndicator,
-  StyleSheet,
-  Animated,
-  FlatList,
-  Easing,
-  ImageBackground,
-  Alert,
-  TouchableOpacity,
-} from 'react-native';
-import {
-  APP_PARAMS,
-  FONT_FAMILIY,
-  DIMENS,
-  emailRegex,
-  KEY,
-  passRegex,
-  SCREEN,
-  WIDTH,
-  HEIGHT,
-  BASE_URL,
-} from '../../../../constants';
-import {LOGO, DUMMY_PAGER} from '../../../../common/images';
-import translate from '../../../../i18n/i18n';
-import {IconX, ICON_TYPE} from '../../../../common/Icons';
+/* eslint-disable react-native/no-inline-styles */
+import React from 'react';
+import {View, Image, Text, Pressable, StyleSheet} from 'react-native';
+import {FONT_FAMILIY, DIMENS} from '../../../../constants';
+import {TOGGLE} from '../../../../common/images';
 import {colors} from '../../../../common/theme';
 
 const SubChildCard = (item: object, index: number, pressRadio: any) => {
@@ -47,40 +17,38 @@ const SubChildCard = (item: object, index: number, pressRadio: any) => {
           opacity: pressed ? 0.5 : 1,
         },
       ]}>
-      {/* Left view */}
       <View
         style={{
           width: item.is_radio ? '80%' : '100%',
           flexDirection: 'row',
         }}>
-        {/* Icon */}
-        <Image
-          style={styles.image}
-          source={item.image}
-          resizeMode={'contain'}
-        />
-        {/* Left child right view */}
+        <Image style={styles.image} source={item.image} resizeMode="contain" />
         <View style={styles.leftView}>
-          <Text style={styles.txtName}>{item.name}</Text>
-          <Text style={styles.txtInfo}>{item.info}</Text>
+          <Text testID="txtName" style={styles.txtName}>{item.name}</Text>
+          <Text testID="txtInfo" style={styles.txtInfo}>{item.info}</Text>
         </View>
       </View>
-      {/* Right view for radio button */}
       {item.is_radio && (
         <View style={styles.rigthView}>
           {item.is_radio_enable ? (
-            <IconX
-              origin={ICON_TYPE.MATERIAL_COMMUNITY}
-              name="toggle-switch"
-              color={colors.color_accent}
-              size={DIMENS.px_32}
+            <Image
+              style={{
+                width: DIMENS.px_32,
+                height: DIMENS.px_28,
+                tintColor: colors.color_accent,
+              }}
+              source={TOGGLE}
+              resizeMode={'contain'}
             />
           ) : (
-            <IconX
-              origin={ICON_TYPE.MATERIAL_COMMUNITY}
-              name="toggle-switch-off"
-              color={colors.grey400}
-              size={DIMENS.px_32}
+            <Image
+              style={{
+                width: DIMENS.px_32,
+                height: DIMENS.px_28,
+                tintColor: colors.grey400,
+              }}
+              source={TOGGLE}
+              resizeMode={'contain'}
             />
           )}
         </View>

@@ -48,8 +48,6 @@ import {
   METER,
 } from '../../../common/images';
 import translate from '../../../i18n/i18n';
-import {storeData, retrieveData} from '../../../common/AsyncStorage';
-import {IconX, ICON_TYPE} from '../../../common/Icons';
 import {BookContext} from '../../../contexts';
 import * as Utils from '../../../utils';
 import * as Handlers from './handlers';

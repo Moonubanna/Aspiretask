@@ -1,8 +1,6 @@
 import React, {useState, useContext, useEffect} from 'react';
 import {ActivityIndicator, StyleSheet, View, Image, Alert} from 'react-native';
 import {colors} from './theme';
-import {LOGO} from './images';
-import {retrieveData} from './AsyncStorage';
 
 import {KEY, SCREEN, DIMENS, WIDTH} from '../constants';
 import * as Utils from '../utils';

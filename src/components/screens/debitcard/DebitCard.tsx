@@ -1,45 +1,11 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState, useContext, useEffect} from 'react';
+import {View} from 'react-native';
+import {useSelector} from 'react-redux';
+import {useDispatch} from 'react-redux';
+import {shallowEqual} from 'react-redux';
+import {SCREEN} from '../../../constants';
 import {
-  View,
-  Image,
-  Text,
-  TextInput,
-  Pressable,
-  ScrollView,
-  RefreshControl,
-  Dimensions,
-  StatusBar,
-  ActivityIndicator,
-  StyleSheet,
-  Animated,
-  FlatList,
-  Easing,
-  ImageBackground,
-  Alert,
-  TouchableOpacity,
-  KeyboardAvoidingView,
-} from 'react-native';
-import {useFocusEffect} from '@react-navigation/native';
-import {useSelector, useDispatch, shallowEqual} from 'react-redux';
-import {
-  APP_PARAMS,
-  FONT_FAMILIY,
-  DIMENS,
-  emailRegex,
-  KEY,
-  passRegex,
-  SCREEN,
-  WIDTH,
-  HEIGHT,
-  BASE_URL,
-} from '../../../constants';
-import {
-  LOGO,
-  EYE_HIDE,
-  EYE_SHOW,
-  LOGO_HORI,
-  VISA_LOGO,
   ACCOUNT,
   WEEKLY,
   FREEZE,
@@ -47,8 +13,6 @@ import {
   DEACTIVATED,
 } from '../../../common/images';
 import translate from '../../../i18n/i18n';
-import {storeData, retrieveData} from '../../../common/AsyncStorage';
-import {IconX, ICON_TYPE} from '../../../common/Icons';
 import {BookContext} from '../../../contexts';
 import * as Utils from '../../../utils';
 import * as Handlers from './handlers';
@@ -62,7 +26,6 @@ import {
   getDebitCardRequestDataAction,
   getClearDebitCardRequestDataAction,
 } from '../../../actions';
-import {colors} from '../../../common/theme';
 
 const HeaderHOCView = HOC.HeaderHOC(View);
 
@@ -195,12 +158,7 @@ const DebitCard = ({}) => {
       style={{flex: 1}}
       isHeader={false}
       isRightIcon={false}>
-      {/* Main Container */}
-      <View style={styles.container}>
-        {/* Header component */}
-        {headerComponent(availableBalance)}
-      </View>
-      {/* Scroll card view */}
+      <View style={styles.container}>{headerComponent(availableBalance)}</View>
       {cardComponent(
         isShowCard,
         pressCardVisibility,
