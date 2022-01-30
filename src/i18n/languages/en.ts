@@ -1,11 +1,6 @@
 export default {
   //app
-  APP_NAME: 'VOXO APP',
-  APP_USER: 'VOXO_user',
-  ABOUT_US_: 'About-Us',
-
-  //text input
-  PLACEHOLDER_NAME: 'Name',
+  APP_NAME: 'Asipre Task',
   //text
   SAVE: 'Save',
   DEBIT_CARD: 'Debit Card',
@@ -29,8 +24,4 @@ export default {
 
   SPENDING_LIMIT_INFO: 'Set a weekly debit card spending limit',
   WEEKLY_INFO: 'Here weekly means the last 7 days - not the calendar week',
-
-  //validation
-  MESSAGE: 'Message',
-  FULL_NAME_EMPTY: 'Full name is empty.',
 };

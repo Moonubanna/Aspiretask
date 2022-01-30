@@ -1,5 +1,5 @@
 import React from 'react';
-import {Pressable, Text} from 'react-native';
+import {Pressable, Text, StyleSheet} from 'react-native';
 import translate from '../i18n/i18n';
 
 import {colors} from './theme';
@@ -14,16 +14,11 @@ export default (
   <Pressable
     onPress={onSearchPress}
     style={({pressed}) => [
+      styles.container,
       {
         width: widthPercent,
-        backgroundColor: colors.color_accent,
         opacity: pressed ? 0.5 : 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: DIMENS.px_14,
         marginTop: marginTop,
-        borderRadius: DIMENS.px_50,
-        alignSelf: 'center',
       },
     ]}>
     <Text
@@ -36,3 +31,14 @@ export default (
     </Text>
   </Pressable>
 );
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: colors.color_accent,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: DIMENS.px_14,
+    borderRadius: DIMENS.px_50,
+    alignSelf: 'center',
+  },
+});

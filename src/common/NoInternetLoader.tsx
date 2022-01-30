@@ -32,11 +32,7 @@ export default class NoInternetLoader extends Component {
         transparent={true}>
         <View style={styles.container}>
           {/* <BubblesLoader size={42} dotRadius={10} color={colors.white} /> */}
-          <Image
-            style={styles.image}
-            source={LOGO}
-            resizeMode={'contain'}
-          />
+          <Image style={styles.image} source={LOGO} resizeMode={'contain'} />
           <Text style={styles.text} numberOfLines={1}>
             {translate('NO_INTERNET')}
           </Text>

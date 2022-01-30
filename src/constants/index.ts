@@ -19,24 +19,9 @@ export const API = {
 
 export const APP_PARAMS = {
   ROLE: 'role',
-  SUPER_ADMIN: 'superAdmin',
 };
 export const KEY = {
   LANG_DATA: 'english',
-  PARAMS_USER: 'user',
-  PARAMS_NAME: 'full_name',
-  PARAMS_IMAGE: 'full',
-  USER_DATA: 'userdata',
-  WALL_DATA: 'walldata',
-  REEL_DATA: 'reeldata',
-  OTHER_REEL_DATA: 'otherreeldata',
-  HASHTAGS_REEL_DATA: 'hashtagsreeldata',
-  SAVED_REEL_DATA: 'dsavereeldata',
-  LANGUAGE_DATA: 'languagedata',
-  UPDATE_PROFILE: 'update_profile',
-  DATA: 'data',
-  USER_TOKEN: 'usertoken',
-  FCM_TOKEN: 'fcmtoken',
   SUCCESS_: true,
   FAILED_: false,
 };
@@ -161,21 +146,9 @@ export const CURRENCY = {
   POUND_STERLING: '\u00A3',
 };
 export const SCREEN = {
-  AUTH: 'Auth',
   DEBIT_CARD: 'DebitCard',
   WEEKLYLIMIT: 'WeeklyLimit',
 };
-
-//Comman
-export const MAX_LENGTH_OF_PHONE_NUMBER = 12;
-export const MIN_LENGTH_OF_PHONE_NUMBER = 7;
-export const KEY_MINIMUMLENGTHOFNAME = 3;
-export const KEY_MAXLENGTHOFNAME = 20;
-export const KEY_MAXLENGTHOFPASSWORD = 20;
-export const KEY_MINIMUMLENGTHOFPASSWORD = 8;
-export const KEY_MINIMUMLENGTHOFCITY = 3;
-export const DATE_FORMAT_SHOW = 'DD MMM YYYY';
-export const DATE_FORMAT_SEND = 'YYYY-MM-DD';
 
 //HEIGHT AND WIDTH
 export const WIDTH = Dimensions.get('window').width;
@@ -187,16 +160,9 @@ export const APP_START_SUCCESS = 'APP_START_SUCCESS';
 export const APP_START_FAIL = 'APP_START_FAIL';
 export const CONNECTION_STATE_CHANGE = 'CONNECTION_STATE_CHANGE';
 
-//AUTH
+//Debit module
 export const APP_DEBITCARD_SUCESS = 'APP_DEBITCARD_SUCESS';
 export const APP_DEBITCARD_FAIL = 'APP_DEBITCARD_FAIL';
 export const APP_DEBITCARD_CLEAR = 'APP_DEBITCARD_CLEAR';
 
 export const APP_UPDATE_GLOBLE_REQUEST = 'APP_UPDATE_GLOBLE_REQUEST';
-
-export const emailRegex =
-  /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-export const nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/;
-export const passRegex =
-  /^.*(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$#%])(^[a-zA-Z0-9@$#%]+$)/;
-////?-i)(?=^.{8,}$)((?!.*\s)(?=.*[A-Z])(?=.*[a-z]))((?=(.*\d){1,})|(?=(.*\W){1,}))^.*$/
