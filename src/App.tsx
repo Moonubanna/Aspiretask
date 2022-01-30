@@ -67,7 +67,7 @@ const App = () => {
         />
         <NavigationContainer>
           <RootStack.Navigator
-            headerShown={false}
+            //headerShown={false}
             screenOptions={{animationEnabled: false}}
             initialRouteName="Splash">
             <RootStack.Screen

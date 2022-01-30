@@ -20,16 +20,8 @@ const AuthLoadingScreen = ({navigation}) => {
   }
   return (
     <View style={styles.container}>
-      <Image
-        style={{
-          width: DIMENS.px_100,
-          height: DIMENS.px_100,
-        }}
-        source={LOGO}
-        resizeMode={'contain'}
-      />
       <ActivityIndicator
-        color={colors.color_primary}
+        color={colors.white}
         size="large"
         style={{marginTop: DIMENS.px_20}}
       />
